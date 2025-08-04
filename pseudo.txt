@@ -1,0 +1,8 @@
+Create a basic Rock, Paper Scissors Game
+when the user inputs an option
+a random option is chosen by the "Computer"
+compare the options selected
+if the user wins add 1 to score
+if the computer wins add 1 to score
+repeat until any score is 3
+print win or lose based on score
