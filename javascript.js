@@ -1,11 +1,30 @@
-let getPlayerChoice = prompt("Please enter Rock, Paper or Scissors: ");
-let outcome;
+let computerChoice;
 
-function playerChoice() {
-    return String(getPlayerChoice).toLowerCase();
+function getComputerChoice() {
+    for (computerChoice = Math.floor(Math.random() * 3) + 1;;) {
+        if (computerChoice === 1) {
+            return computerChoice = "Rock";
+        } else if (computerChoice === 2) {
+            return computerChoice = "Paper";
+        } else {
+            return computerChoice = "Scissors";
+        }
+    }
 }
-console.log(playerChoice());
 
-let getComputerChoice = Math.floor(Math.random() * 3) + 1;
+console.log(getComputerChoice());
 
-console.log(getComputerChoice);
+let humanChoice = prompt("Please enter Rock, Paper, or Scissors");
+
+function getPlayerChoice() {
+    return humanChoice = String(humanChoice).at(0).toUpperCase() + String(humanChoice).slice(1).toLowerCase();
+}
+
+console.log(getPlayerChoice());
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(){
+    
+}
